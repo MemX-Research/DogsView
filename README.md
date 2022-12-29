@@ -4,40 +4,41 @@ This repository contains the DogsView dataset described in the paper "Unveiling 
 
 <!-- If you use this dataset in your work, please cite our paper:
 ```
-citation goes here
+citation goes here; add memx
+
 ``` -->
 
 ## Dataset
-Data for the DogsView dataset was collected in a controlled experimental setting and in an open outdoor setting. All videos including eye videos and world videos were collected under 1920x1080 resolution, 30fps, infrared recording conditions and 1920x1088 resolution, 30fps recording conditions, respectively. Currently we have 57 pairs of videos and they are divided. We divide the video of the experimental environment into 4 cases according to the experimental content, and each case contains the data of 5 dogs; the open scene is divided into 3 fields, which are from the same dog. The detailed construction of the dataset is given in Chapter 4 of the paper.
+The DogsView dataset was collected in various open-world scenarios from five dog subjects. All videos, including eye/scene videos, have a spatial resolution of 1920x1080 and a sampling rate of 30fps. Currently, we have 63 pairs of eye/scene video clips. A detailed description of the DogsVies dataset is given in Section 4 of the paper.
 
 The dataset can be downloaded [here](https://www.dropbox.com/sh/gbuqcbx4rfm9fhv/AAAked71G0hePdaXYq9YBLBka?dl=0).
 
 ## Data Format
-All videos are divided into in-lab part and field study part.In-lab part videos are divided into 4 cases, each one is divided into 5 dogs, they have different numbers of folders.Field study videos come from the same dog and are divided into three cases: safeguarding, dog cognition and animal-computer interaction, each case has different numbers of folders.Every single folder contains three videos and two files.
+The DogsView dataset has xxx folders. Each folder is named "scenerio_x_dog_y_z", where x is the number of open-world scenarios, y is the number of dog subjects, and z is the repeated times for dog y in scenario x. Each folder contains three videos and two CSV files described as follows:
 
-**eye video.mp4**: This video contains eye images stored in MP4 format which is recorded under 1920*1080 resolution, 30fps, infrared recording conditions.
+**eye video.mp4**: This video contains eye videos recorded under infrared recording conditions.
 
-**world video.mp4**: This video contains world images seen from the dog's point of view, which is stored in MP4 format which is recorded under 1920*1088 resolution, 30fps recording conditions.
+**world video.mp4**: This video contains scene videos from dog subjects' filed-of-view.
 
-**gazed world video.mp4**: This video is a world video marked with gaze positions locations.
+**gazed world video.mp4**: This video is the scene video marked with a dog subject's gaze point positions.
 
-**gaze_positions.csv**:This CSV file contains the eye tracking result of corresponding eye video.
+**gaze_positions.csv**: This CSV file contains the eye-tracking results.
 
 It contains the following attributes:
 
-`world_index`: The frame number.
+`world_index`: The frame number of the scene video.
 
-`norm_pos_x` and `norm_pos_y`: The gaze position in the space of the scene frame. The are floating point numbers and origin 0,0 at the bottom left and 1,1 at the top right.
+`norm_pos_x` and `norm_pos_y`: The gaze position in the space of the scene frame. They are floating point numbers with origin point (0,0) at the bottom left and ending point (1,1) at the top right.
 
-**auto_annotation.csv**:This CSV file contains the annotation which is automatically annotated by our proposed model of every attentive session in a video 
+**auto_annotation.csv**: This CSV file contains the annotations, which the CANINE model automatically obtains for each attentive session in a scene video. 
 
-`attentive session start frame`: The frame number of the start frame of an attentive session.
+`attentive session start frame`: The starting frame number in an attention session.
 
-`attentive session end frame`: The frame number of the end frame of an attentive session.
+`attentive session end frame`: The ending frame number in an attention session.
 
-`dog behavior`: The behavior finally made by the dog in this clip.
+`dog behavior`: The dog subject's behavior in an attention session.
 
-`human action`: The most important human action which causes the corresponding dog behavior.
+`human action`: The human subject's action (or called communicative cues) that causes the dog's responsive behaviors.
 
 
 
