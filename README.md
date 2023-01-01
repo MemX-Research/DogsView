@@ -14,7 +14,7 @@ The DogsView dataset was collected in various open-world scenarios from five dog
 The dataset can be downloaded [here](https://www.dropbox.com/sh/gbuqcbx4rfm9fhv/AAAked71G0hePdaXYq9YBLBka?dl=0).
 
 ## Data Format
-The DogsView dataset has xxx folders. Each folder is named "scenerio_x_dog_y_z", where x is the number of open-world scenarios, y is the number of dog subjects, and z is the repeated times for dog y in scenario x. Each folder contains three videos and two CSV files described as follows:
+The DogsView dataset has 63 folders. Each folder is named "scenario_x_dog_y_z", where x is the number of open-world scenarios, y is the number of dog subjects, and z is the repeated times for dog y in scenario x. Each folder contains three videos and two CSV files described as follows:
 
 **eye video.mp4**: This video contains eye videos recorded under infrared recording conditions.
 
