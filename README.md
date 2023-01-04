@@ -2,11 +2,19 @@
 
 This repository contains the DogsView dataset described in the paper "Unveiling Causal Attention in Dogs’ Eyes with Smart Eyewear".
 
-<!-- If you use this dataset in your work, please cite our paper:
+If you use this dataset in your work, please cite our paper:
 ```
-citation goes here; add memx
-
-``` -->
+@article{chang2021memx,
+  title={MemX: An Attention-Aware Smart Eyewear System for Personalized Moment Auto-capture},
+  author={Chang, Yuhu and Zhao, Yingying and Dong, Mingzhi and Wang, Yujiang and Lu, Yutian and Lv, Qin and Dick, Robert P and Lu, Tun and Gu, Ning and Shang, Li},
+  journal={Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies},
+  volume={5},
+  number={2},
+  pages={1--23},
+  year={2021},
+  publisher={ACM New York, NY, USA}
+}
+```
 
 ## Dataset
 The DogsView dataset was collected in various open-world scenarios from five dog subjects. All videos, including eye/scene videos, have a spatial resolution of 1920x1080 and a sampling rate of 30fps. Currently, we have 63 pairs of eye/scene video clips. A detailed description of the DogsVies dataset is given in Section 4 of the paper.
