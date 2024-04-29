@@ -3,7 +3,7 @@
 This repository contains the DogsView dataset described in the paper "Unveiling Causal Attention in Dogs’ Eyes with Smart Eyewear".
 
 If you use this dataset in your work, please cite our paper:
-```
+```bibtex
 @article{10.1145/3569490,
   author = {Zhao, Yingying and Li, Ning and Pan, Wentao and Wang, Yujiang and Dong, Mingzhi and Ding, Xianghua (Sharon) and Lv, Qin and Dick, Robert P. and Li, Dongsheng and Yang, Fan and Lu, Tun and Gu, Ning and Shang, Li},
   title = {Unveiling Causal Attention in Dogs' Eyes with Smart Eyewear},
